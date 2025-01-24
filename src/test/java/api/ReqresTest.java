@@ -11,8 +11,8 @@ public class ReqresTest {
     public void getUserInfoCurrent(){
     given()
             .filter(new AllureRestAssured())
-            .baseUri("https://reqres.in")
-            .basePath("/api/users?page=2")
+            .baseUri("https://reqres.in/api/users?page=2")
+          //  .basePath("/api/users?page=2")
 
             .contentType(ContentType.JSON)
             .when().get()

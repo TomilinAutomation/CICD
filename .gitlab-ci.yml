@@ -1,0 +1,7 @@
+image: maven:4-openjdk-17
+
+test:
+  stage: test
+  script:
+  - mvn clean test
+
